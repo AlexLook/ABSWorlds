@@ -1,0 +1,39 @@
+﻿<UserControl xmlns = "https://github.com/avaloniaui"
+             xmlns:x = "http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d = "http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc = "http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:models="using:ABSWorlds.Models"
+             xmlns:pages="using:ABSWorlds.Pages"
+             xmlns:viewModels="using:ABSWorlds.ViewModels"
+             xmlns:controls = "clr-namespace:ABSWorlds.Controls"
+             mc:Ignorable = "d"
+             d:DesignWidth = "800"
+             d:DesignHeight = "450"
+             x:Class = "ABSWorlds.Views.MainView"
+             x:DataType="viewModels:MainWindowViewModel">
+    <Grid RowDefinitions = "Auto, *, Auto"
+          Name = "Root" >
+        <Menu>
+            <MenuItem Header = "_Файл" >
+                <MenuItem Header = "_Закрыть" />
+            </MenuItem>
+            <MenuItem Header = "_Вид" />
+            <MenuItem Header = "_Сервис" />
+            <MenuItem Header = "_?" />
+        </Menu>
+        <controls:HamburgerMenu Grid.Row = "1"
+                                Name="Sidebar">
+            <TabItem Header = "Энциклопедия" >
+                <pages:Encyclopedia />
+            </TabItem>
+            <TabItem Header = "Библиография" />
+            <TabItem Header = "Произведения" />
+            <TabItem Header = "Статьи" />
+            <TabItem Header = "Цитаты" />
+            <TabItem Header = "Хронология мира Полудня" />
+        </controls:HamburgerMenu>
+        <Panel Grid.Row = "2" >
+            <TextBlock>Просто текст</TextBlock>
+        </Panel>
+    </Grid>
+</UserControl>

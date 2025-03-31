@@ -13,9 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{9E1A3F00-E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABSWorlds", "src\ABSWorlds\ABSWorlds.csproj", "{AA994A7C-DFC7-46C8-B5D8-423B00EA0E2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABSWorlds.Common", "ABSWorlds.Common\ABSWorlds.Common.csproj", "{4ABE3028-E40B-41D2-A2D0-1904CD8BA527}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABSWorlds.Common", "src\ABSWorlds.Common\ABSWorlds.Common.csproj", "{4ABE3028-E40B-41D2-A2D0-1904CD8BA527}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABSWorlds.Editor", "ABSWorlds.Editor\ABSWorlds.Editor.csproj", "{CCEE1505-9DCC-46F2-8624-4EEC939F1493}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABSWorlds.Editor", "src\ABSWorlds.Editor\ABSWorlds.Editor.csproj", "{CCEE1505-9DCC-46F2-8624-4EEC939F1493}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{A3263834-1FC2-4C2F-98F6-0E74E9CAD323}"
 EndProject
@@ -25,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "texts", "texts", "{A3B23022
 		texts\Encyclopedia.sdf = texts\Encyclopedia.sdf
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABSWorlds.DataTool", "ABSWorlds.DataTool\ABSWorlds.DataTool.csproj", "{995447E2-A9AB-4213-B706-6A95B4D14862}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABSWorlds.DataTool", "src\ABSWorlds.DataTool\ABSWorlds.DataTool.csproj", "{995447E2-A9AB-4213-B706-6A95B4D14862}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

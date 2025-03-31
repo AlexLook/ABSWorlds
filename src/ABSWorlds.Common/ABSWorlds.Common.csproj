@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <LangVersion>latestmajor</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Company>Alex Look</Company>
+        <Product>Common classes of Encyclopedia of Worlds of Strugatsky brothers</Product>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Avalonia" Version="11.2.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="FileUtils\" />
+    </ItemGroup>
+
+</Project>

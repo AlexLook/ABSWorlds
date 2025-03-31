@@ -7,11 +7,11 @@
         <ApplicationManifest>app.manifest</ApplicationManifest>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
         <Company>Alex Look</Company>
-        <Product>Encyclopedia of Worlds of Strugatsky brothers</Product>
-        <LangVersion>latestmajor</LangVersion>
+        <Product>Editor of Encyclopedia of Worlds of Strugatsky brothers</Product>
     </PropertyGroup>
 
     <ItemGroup>
+        <Folder Include="Models\"/>
         <AvaloniaResource Include="Assets\**"/>
     </ItemGroup>
 
@@ -26,14 +26,5 @@
             <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
         </PackageReference>
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1"/>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Controls\" />
-      <Folder Include="Services\" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\..\ABSWorlds.Common\ABSWorlds.Common.csproj" />
     </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ABSWorlds.Models;
+namespace ABSWorlds.Common.Models;
 
 /// <summary>
 /// Цикл произведений

@@ -5,10 +5,27 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7EE48AC7-F047-4B11-848C-9ABB9FAE4FE3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{6E6CB4ED-3186-4D0E-9D90-25327023552B}"
+	ProjectSection(SolutionItems) = preProject
+		docs\DesignDoc.txt = docs\DesignDoc.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{9E1A3F00-EC11-4E72-BAAE-D27227981AE2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABSWorlds", "src\ABSWorlds\ABSWorlds.csproj", "{AA994A7C-DFC7-46C8-B5D8-423B00EA0E2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABSWorlds.Common", "ABSWorlds.Common\ABSWorlds.Common.csproj", "{4ABE3028-E40B-41D2-A2D0-1904CD8BA527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABSWorlds.Editor", "ABSWorlds.Editor\ABSWorlds.Editor.csproj", "{CCEE1505-9DCC-46F2-8624-4EEC939F1493}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{A3263834-1FC2-4C2F-98F6-0E74E9CAD323}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "texts", "texts", "{A3B23022-7094-40E3-99FC-F148BD81EBEA}"
+	ProjectSection(SolutionItems) = preProject
+		texts\Sources.sdf = texts\Sources.sdf
+		texts\Encyclopedia.sdf = texts\Encyclopedia.sdf
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABSWorlds.DataTool", "ABSWorlds.DataTool\ABSWorlds.DataTool.csproj", "{995447E2-A9AB-4213-B706-6A95B4D14862}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,11 +34,26 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AA994A7C-DFC7-46C8-B5D8-423B00EA0E2B} = {E3E303D9-DE45-47EE-A682-AB6169E47ECA}
+		{4ABE3028-E40B-41D2-A2D0-1904CD8BA527} = {E3E303D9-DE45-47EE-A682-AB6169E47ECA}
+		{CCEE1505-9DCC-46F2-8624-4EEC939F1493} = {E3E303D9-DE45-47EE-A682-AB6169E47ECA}
+		{995447E2-A9AB-4213-B706-6A95B4D14862} = {E3E303D9-DE45-47EE-A682-AB6169E47ECA}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{AA994A7C-DFC7-46C8-B5D8-423B00EA0E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AA994A7C-DFC7-46C8-B5D8-423B00EA0E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA994A7C-DFC7-46C8-B5D8-423B00EA0E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA994A7C-DFC7-46C8-B5D8-423B00EA0E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ABE3028-E40B-41D2-A2D0-1904CD8BA527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ABE3028-E40B-41D2-A2D0-1904CD8BA527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ABE3028-E40B-41D2-A2D0-1904CD8BA527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ABE3028-E40B-41D2-A2D0-1904CD8BA527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCEE1505-9DCC-46F2-8624-4EEC939F1493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCEE1505-9DCC-46F2-8624-4EEC939F1493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCEE1505-9DCC-46F2-8624-4EEC939F1493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCEE1505-9DCC-46F2-8624-4EEC939F1493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{995447E2-A9AB-4213-B706-6A95B4D14862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{995447E2-A9AB-4213-B706-6A95B4D14862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{995447E2-A9AB-4213-B706-6A95B4D14862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{995447E2-A9AB-4213-B706-6A95B4D14862}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

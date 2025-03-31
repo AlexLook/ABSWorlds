@@ -1,4 +1,4 @@
-﻿namespace ABSWorlds.Models;
+﻿namespace ABSWorlds.Common.Models;
 
 /// <summary>
 /// Источник (рассказ, повесть, etc)

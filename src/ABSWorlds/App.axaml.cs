@@ -1,13 +1,13 @@
 using System;
+using System.Linq;
+using ABSWorlds.Common.Models;
+using ABSWorlds.ViewModels;
+using ABSWorlds.Views;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core;
 using Avalonia.Data.Core.Plugins;
-using System.Linq;
-using ABSWorlds.Models;
 using Avalonia.Markup.Xaml;
-using ABSWorlds.ViewModels;
-using ABSWorlds.Views;
 using Avalonia.Styling;
 using Avalonia.Themes.Fluent;
 using Avalonia.Themes.Simple;
@@ -38,7 +38,7 @@ public partial class App : Application {
         _dataGridFluent    = (IStyle)Resources["DataGridFluent"]!;
         _dataGridSimple    = (IStyle)Resources["DataGridSimple"]!;
 
-        SetCatalogThemes(CatalogTheme.Fluent);
+        SetCatalogThemes(VisualTheme.Fluent);
     }
 
     public override void OnFrameworkInitializationCompleted() {
@@ -65,10 +65,10 @@ public partial class App : Application {
         }
     }
     
-    private       CatalogTheme _prevTheme;
-    public static CatalogTheme CurrentTheme => ((App)Current!)._prevTheme;
+    private       VisualTheme _prevTheme;
+    public static VisualTheme CurrentTheme => ((App)Current!)._prevTheme;
 
-    public static void SetCatalogThemes(CatalogTheme theme)
+    public static void SetCatalogThemes(VisualTheme theme)
     {
         var app       = (App)Current!;
         var prevTheme = app._prevTheme;
@@ -83,12 +83,12 @@ public partial class App : Application {
         }
 
         switch (theme) {
-            case CatalogTheme.Fluent:
+            case VisualTheme.Fluent:
                 app._themeStylesContainer[0] = app._fluentTheme!;
                 app._themeStylesContainer[1] = app._colorPickerFluent!;
                 app._themeStylesContainer[2] = app._dataGridFluent!;
                 break;
-            case CatalogTheme.Simple:
+            case VisualTheme.Simple:
                 app._themeStylesContainer[0] = app._simpleTheme!;
                 app._themeStylesContainer[1] = app._colorPickerSimple!;
                 app._themeStylesContainer[2] = app._dataGridSimple!;

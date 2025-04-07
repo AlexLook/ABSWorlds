@@ -1,5 +1,7 @@
 ﻿using System.CommandLine;
 
+using ABSWorlds.Common.FileUtils.Parsers;
+
 Console.WriteLine("ABSWorlds Data Tool. Version 1.0");
 
 var sourceFileOption = new Option<FileInfo?>(
@@ -36,8 +38,12 @@ var rootCommand = new RootCommand("Data tools for ABSWorlds application.");
 var buildCommand = new Command("build", "Build data file") {sourceFileOption, targetPathOption };
 
 buildCommand.SetHandler(
-        /*async*/ (sourceFile, targetPath, prettyFormat) => {
-            /*await*/ Console.WriteLine($"build from {sourceFile} to {targetPath} with {prettyFormat}");
+        async (sourceFile, targetPath, prettyFormat) => {
+            var sourceParser = new SourceFileParser();
+            if (sourceFile != null) {
+                await sourceParser.ParseFile(sourceFile, targetPath, prettyFormat);
+                Console.WriteLine($"build from {sourceFile} to {targetPath} with {prettyFormat}");
+            }
         },
         sourceFileOption,
         targetPathOption,

@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="FileUtils\" />
+      <Folder Include="FileUtils\Readers\" />
     </ItemGroup>
 
 </Project>
